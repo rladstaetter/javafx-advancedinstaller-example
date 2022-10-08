@@ -18,6 +18,8 @@ Dont forget to adapt the Advanced Installer path in the pom.xml file.
 
 ## Build
 
+    mvn package
+
 After some compiling, an installer should be created in the target directory.
 
 ## Running
