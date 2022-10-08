@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="19.8.1" version="19.8.1" Modules="professional" RootPath="." Language="en" Id="{0F3A3354-B94F-4556-9C26-B3775561CF36}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent;CPLAppletComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_PACKAGING_TOOL" Value="Advanced Installer 19.8.1 build ff1d5dfa" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="CurrentJavaProductName" Value="CurrentJavaProductName"/>
+    <ROW Property="Manufacturer" Value="net.ladstatt"/>
+    <ROW Property="ProductCode" Value="1033:{902FA516-7EEF-4706-A496-316A6C4A5A1A} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="javafx-19-advancedinstaller-example"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{3CF1C4C3-3BF2-4079-904E-354CA28F736A}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="bin_Dir" Directory_Parent="jre64_Dir" DefaultDir="bin"/>
+    <ROW Directory="conf_Dir" Directory_Parent="jre64_Dir" DefaultDir="conf"/>
+    <ROW Directory="dependency_Dir" Directory_Parent="APPDIR" DefaultDir="DEPEND~1|dependency"/>
+    <ROW Directory="java.base_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.BAS|java.base"/>
+    <ROW Directory="java.compiler_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.COM|java.compiler"/>
+    <ROW Directory="java.datatransfer_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.DAT|java.datatransfer"/>
+    <ROW Directory="java.desktop_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.DES|java.desktop"/>
+    <ROW Directory="java.instrument_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.INS|java.instrument"/>
+    <ROW Directory="java.logging_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.LOG|java.logging"/>
+    <ROW Directory="java.management.rmi_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVAMA~1.RMI|java.management.rmi"/>
+    <ROW Directory="java.management_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.MAN|java.management"/>
+    <ROW Directory="java.naming_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.NAM|java.naming"/>
+    <ROW Directory="java.net.http_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVANE~1.HTT|java.net.http"/>
+    <ROW Directory="java.prefs_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.PRE|java.prefs"/>
+    <ROW Directory="java.rmi_Dir" Directory_Parent="legal_Dir" DefaultDir="java.rmi"/>
+    <ROW Directory="java.scripting_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.SCR|java.scripting"/>
+    <ROW Directory="java.se_Dir" Directory_Parent="legal_Dir" DefaultDir="java.se"/>
+    <ROW Directory="java.security.jgss_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVASE~1.JGS|java.security.jgss"/>
+    <ROW Directory="java.security.sasl_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVASE~1.SAS|java.security.sasl"/>
+    <ROW Directory="java.smartcardio_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.SMA|java.smartcardio"/>
+    <ROW Directory="java.sql.rowset_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVASQ~1.ROW|java.sql.rowset"/>
+    <ROW Directory="java.sql_Dir" Directory_Parent="legal_Dir" DefaultDir="java.sql"/>
+    <ROW Directory="java.transaction.xa_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVATR~1.XA|java.transaction.xa"/>
+    <ROW Directory="java.xml.crypto_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVAXM~1.CRY|java.xml.crypto"/>
+    <ROW Directory="java.xml_Dir" Directory_Parent="legal_Dir" DefaultDir="java.xml"/>
+    <ROW Directory="jdk.accessibility_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.ACC|jdk.accessibility"/>
+    <ROW Directory="jdk.charsets_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.CHA|jdk.charsets"/>
+    <ROW Directory="jdk.crypto.cryptoki_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKCRY~1.CRY|jdk.crypto.cryptoki"/>
+    <ROW Directory="jdk.crypto.ec_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKCRY~1.EC|jdk.crypto.ec"/>
+    <ROW Directory="jdk.crypto.mscapi_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKCRY~1.MSC|jdk.crypto.mscapi"/>
+    <ROW Directory="jdk.dynalink_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.DYN|jdk.dynalink"/>
+    <ROW Directory="jdk.httpserver_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.HTT|jdk.httpserver"/>
+    <ROW Directory="jdk.incubator.concurrent_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKINC~1.CON|jdk.incubator.concurrent"/>
+    <ROW Directory="jdk.incubator.vector_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKINC~1.VEC|jdk.incubator.vector"/>
+    <ROW Directory="jdk.internal.vm.ci_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKINT~1.CI|jdk.internal.vm.ci"/>
+    <ROW Directory="jdk.internal.vm.compiler.manage_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKINT~1.MAN|jdk.internal.vm.compiler.management"/>
+    <ROW Directory="jdk.internal.vm.compiler_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKINT~1.COM|jdk.internal.vm.compiler"/>
+    <ROW Directory="jdk.jdwp.agent_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKJDW~1.AGE|jdk.jdwp.agent"/>
+    <ROW Directory="jdk.jfr_Dir" Directory_Parent="legal_Dir" DefaultDir="jdk.jfr"/>
+    <ROW Directory="jdk.jsobject_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.JSO|jdk.jsobject"/>
+    <ROW Directory="jdk.localedata_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.LOC|jdk.localedata"/>
+    <ROW Directory="jdk.management.agent_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKMAN~1.AGE|jdk.management.agent"/>
+    <ROW Directory="jdk.management.jfr_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKMAN~1.JFR|jdk.management.jfr"/>
+    <ROW Directory="jdk.management_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.MAN|jdk.management"/>
+    <ROW Directory="jdk.naming.dns_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKNAM~1.DNS|jdk.naming.dns"/>
+    <ROW Directory="jdk.naming.rmi_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKNAM~1.RMI|jdk.naming.rmi"/>
+    <ROW Directory="jdk.net_Dir" Directory_Parent="legal_Dir" DefaultDir="jdk.net"/>
+    <ROW Directory="jdk.nio.mapmode_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKNIO~1.MAP|jdk.nio.mapmode"/>
+    <ROW Directory="jdk.sctp_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.SCT|jdk.sctp"/>
+    <ROW Directory="jdk.security.auth_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKSEC~1.AUT|jdk.security.auth"/>
+    <ROW Directory="jdk.security.jgss_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKSEC~1.JGS|jdk.security.jgss"/>
+    <ROW Directory="jdk.unsupported_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.UNS|jdk.unsupported"/>
+    <ROW Directory="jdk.xml.dom_Dir" Directory_Parent="legal_Dir" DefaultDir="JDKXML~1.DOM|jdk.xml.dom"/>
+    <ROW Directory="jdk.zipfs_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.ZIP|jdk.zipfs"/>
+    <ROW Directory="jfr_Dir" Directory_Parent="lib_Dir" DefaultDir="jfr"/>
+    <ROW Directory="jre64_Dir" Directory_Parent="APPDIR" DefaultDir="jre64"/>
+    <ROW Directory="legal_Dir" Directory_Parent="jre64_Dir" DefaultDir="legal"/>
+    <ROW Directory="lib_Dir" Directory_Parent="jre64_Dir" DefaultDir="lib"/>
+    <ROW Directory="limited_Dir" Directory_Parent="policy_Dir" DefaultDir="limited"/>
+    <ROW Directory="management_Dir" Directory_Parent="conf_Dir" DefaultDir="MANAGE~1|management"/>
+    <ROW Directory="policy_Dir" Directory_Parent="security_Dir" DefaultDir="policy"/>
+    <ROW Directory="security_1_Dir" Directory_Parent="lib_Dir" DefaultDir="security"/>
+    <ROW Directory="security_Dir" Directory_Parent="conf_Dir" DefaultDir="security"/>
+    <ROW Directory="server_Dir" Directory_Parent="bin_Dir" DefaultDir="server"/>
+    <ROW Directory="unlimited_Dir" Directory_Parent="policy_Dir" DefaultDir="UNLIMI~1|unlimited"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="ADDITIONAL_LICENSE_INFO" ComponentId="{ADB2D76D-57AF-4D79-AF53-53F82921C67A}" Directory_="java.base_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_1" ComponentId="{B021C293-3497-4D44-8A1F-8FB8E3977583}" Directory_="java.compiler_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_1" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_10" ComponentId="{7DFF4CA5-41CF-4F75-9C32-AC8EB33415A2}" Directory_="java.prefs_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_10" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_11" ComponentId="{C0A613EF-B806-419E-901A-62474AE53FB2}" Directory_="java.rmi_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_11" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_12" ComponentId="{F582A9C2-A4F6-4E54-9A00-F74777D9F11B}" Directory_="java.scripting_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_12" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_13" ComponentId="{09EF018E-BF83-4707-9CBC-EE0981892026}" Directory_="java.se_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_13" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_14" ComponentId="{F1D41621-0BBE-4119-9F0C-C859F12F3389}" Directory_="java.security.jgss_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_14" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_15" ComponentId="{9FC6D7BE-44D9-479C-88E9-168D5099E88F}" Directory_="java.security.sasl_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_15" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_16" ComponentId="{8592776B-C7D5-4B23-BA20-A90E5E54DB10}" Directory_="java.smartcardio_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_16" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_17" ComponentId="{9A32F887-8D52-4470-AD49-FF1CD12B2379}" Directory_="java.sql_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_17" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_18" ComponentId="{DEDA18CA-FF97-40B8-9E10-8B2E890536FE}" Directory_="java.sql.rowset_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_18" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_19" ComponentId="{BA36B369-5A8B-4BC4-A199-DFAFA757C276}" Directory_="java.transaction.xa_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_19" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_2" ComponentId="{2FEFE3F0-75C8-4062-BBFC-65E35022BA68}" Directory_="java.datatransfer_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_2" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_20" ComponentId="{1C91F1FB-6326-49EB-9774-D3F6E826E04C}" Directory_="java.xml_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_20" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_21" ComponentId="{F9F3F049-187B-4163-B870-054D85DFC0E9}" Directory_="java.xml.crypto_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_21" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_22" ComponentId="{6AB83CA0-68C7-4FDF-8DF7-A27BFF8B80D0}" Directory_="jdk.accessibility_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_22" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_23" ComponentId="{2D9E32BF-2C8E-405E-84B8-416431D837DC}" Directory_="jdk.charsets_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_23" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_24" ComponentId="{631D7E63-5072-415E-8816-61B88766C99F}" Directory_="jdk.crypto.cryptoki_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_24" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_25" ComponentId="{732B4E18-908B-4A2A-94FD-FBB81E0D9A45}" Directory_="jdk.crypto.ec_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_25" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_26" ComponentId="{C14856D5-9062-456B-9417-9E4718AFC653}" Directory_="jdk.crypto.mscapi_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_26" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_27" ComponentId="{ACDE62F9-F014-41E5-9FC6-F374F095E80E}" Directory_="jdk.dynalink_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_27" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_28" ComponentId="{351A51F6-D4DB-44B2-80D0-90985B3DF269}" Directory_="jdk.httpserver_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_28" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_29" ComponentId="{89E3F623-26DD-4A27-A77F-D4A7EB6D62E4}" Directory_="jdk.incubator.concurrent_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_29" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_3" ComponentId="{5B455629-3CAE-4C8C-9513-99CCF7BD02B0}" Directory_="java.desktop_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_3" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_30" ComponentId="{3D049DD7-E796-40EB-97D1-A9A9A0B1030D}" Directory_="jdk.incubator.vector_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_30" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_31" ComponentId="{A7E848BE-6702-4D4D-9144-9A7F15F004FE}" Directory_="jdk.internal.vm.ci_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_31" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_32" ComponentId="{4B0005A1-E070-4535-86D3-DA84C46D9445}" Directory_="jdk.internal.vm.compiler_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_32" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_33" ComponentId="{2E2A0520-3284-4000-95B6-C81FB64B6DDB}" Directory_="jdk.internal.vm.compiler.manage_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_33" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_34" ComponentId="{E559A2FE-15F8-47AF-A46D-4E53DAE832AB}" Directory_="jdk.jdwp.agent_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_34" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_35" ComponentId="{A7E5A244-4E5B-4FB0-9FA4-831C8ED7DEF9}" Directory_="jdk.jfr_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_35" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_36" ComponentId="{C991FE3F-0259-457E-827B-3015B67E414A}" Directory_="jdk.jsobject_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_36" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_37" ComponentId="{0D43AE3F-9A39-4ECF-B57A-9B1AE8F151B6}" Directory_="jdk.localedata_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_37" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_38" ComponentId="{D693B9B9-46F7-4F3A-A697-624347AC22FF}" Directory_="jdk.management_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_38" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_39" ComponentId="{EA7DFC41-C87B-4896-A73F-1873D496CD50}" Directory_="jdk.management.agent_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_39" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_4" ComponentId="{5110A977-1CC5-4F36-AFCE-7B231E7FDF5A}" Directory_="java.instrument_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_4" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_40" ComponentId="{BAB68F27-88DD-467C-B6C6-1E37CC6A5FE2}" Directory_="jdk.management.jfr_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_40" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_41" ComponentId="{26583823-A0B8-4CEE-96E0-03D6DDB0A466}" Directory_="jdk.naming.dns_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_41" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_42" ComponentId="{152C36A4-3012-40E9-BB1A-6D7E86FEC2BB}" Directory_="jdk.naming.rmi_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_42" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_43" ComponentId="{AF575F89-EF2F-4867-B0E6-40CC38428788}" Directory_="jdk.net_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_43" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_44" ComponentId="{65B83313-87A9-48D2-8646-12EFFAD14BA6}" Directory_="jdk.nio.mapmode_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_44" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_45" ComponentId="{240D82DC-32C3-4A10-B1C2-A6B83D459440}" Directory_="jdk.sctp_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_45" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_46" ComponentId="{D284150C-E74C-4566-A308-36CBA5EDEB90}" Directory_="jdk.security.auth_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_46" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_47" ComponentId="{1D5F540D-45CF-4D59-A1C0-BAE414B3B5A7}" Directory_="jdk.security.jgss_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_47" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_48" ComponentId="{B51D431F-BB31-4D49-BA2D-2A6099DAD6DD}" Directory_="jdk.unsupported_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_48" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_49" ComponentId="{6D0532D5-EC3E-488F-B460-55E22B64633D}" Directory_="jdk.xml.dom_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_49" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_5" ComponentId="{BCC67EB9-31CC-4CCB-A730-E0BAE8B24FA0}" Directory_="java.logging_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_5" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_50" ComponentId="{F22879A8-088E-4850-9AA6-34833CFEAB33}" Directory_="jdk.zipfs_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_50" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_6" ComponentId="{A4FEDA74-4D99-4FFB-B294-1448148EDC91}" Directory_="java.management_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_6" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_7" ComponentId="{CB461894-4CE0-400A-AD05-C436C22840EB}" Directory_="java.management.rmi_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_7" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_8" ComponentId="{27D964B8-DA34-4766-8A10-5314D3CAA9EB}" Directory_="java.naming_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_8" Type="0"/>
+    <ROW Component="ADDITIONAL_LICENSE_INFO_9" ComponentId="{06A397F1-1D43-4272-9B1C-7E6126635835}" Directory_="java.net.http_Dir" Attributes="0" KeyPath="ADDITIONAL_LICENSE_INFO_9" Type="0"/>
+    <ROW Component="AI_ExePath" ComponentId="{E2B386E1-8F30-4547-8CD5-78B818DC390A}" Directory_="APPDIR" Attributes="260" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{5279CC11-0638-4071-B766-CAF82D84F7AD}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="DISCLAIMER" ComponentId="{3D7A9078-6966-464A-B815-A32E24F5815E}" Directory_="jre64_Dir" Attributes="0" KeyPath="release" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{0621E4D8-623C-4144-BE33-EEC631815434}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="README.txt" ComponentId="{7F4D2834-7B02-4B03-831A-916B8E3B4CB5}" Directory_="policy_Dir" Attributes="0" KeyPath="README.txt" Type="0"/>
+    <ROW Component="apimswincoreconsolel110.dll" ComponentId="{8032986F-754E-4A8D-A94E-2CB505AD9DF6}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreconsolel110.dll"/>
+    <ROW Component="apimswincoredatetimel110.dll" ComponentId="{BB05A5EF-E1F7-4ED9-971F-0F580269C9D0}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoredatetimel110.dll"/>
+    <ROW Component="apimswincoredebugl110.dll" ComponentId="{3A3E1110-3F1C-4AAD-B731-60718359AFCE}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoredebugl110.dll"/>
+    <ROW Component="apimswincoreerrorhandlingl110.dll" ComponentId="{7834DC72-E3C1-4C5A-A68B-941FBABFB8E0}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreerrorhandlingl110.dll"/>
+    <ROW Component="apimswincorefilel110.dll" ComponentId="{8B837E11-3B37-4188-B6BF-4199C3DC1AE0}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorefilel110.dll"/>
+    <ROW Component="apimswincorefilel120.dll" ComponentId="{5243D5FF-F4AE-4BCF-9C86-F8D526AC1EA9}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorefilel120.dll"/>
+    <ROW Component="apimswincorefilel210.dll" ComponentId="{0060E9B9-C54A-471C-B3BB-C386E7248D3B}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorefilel210.dll"/>
+    <ROW Component="apimswincorehandlel110.dll" ComponentId="{67D45453-F26A-48C6-93D1-0535A6ED89AA}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorehandlel110.dll"/>
+    <ROW Component="apimswincoreheapl110.dll" ComponentId="{7820EE9D-A379-4C25-BD20-7F9DEE581BCF}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreheapl110.dll"/>
+    <ROW Component="apimswincoreinterlockedl110.dll" ComponentId="{7169C8AB-776B-4FB0-9873-5073F5C836C6}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreinterlockedl110.dll"/>
+    <ROW Component="apimswincorelibraryloaderl110.dll" ComponentId="{F13986B2-3BC2-4539-9357-F779EB1CD8B3}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorelibraryloaderl110.dll"/>
+    <ROW Component="apimswincorelocalizationl120.dll" ComponentId="{12167944-7778-4825-BFCB-70FAC17C41B4}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorelocalizationl120.dll"/>
+    <ROW Component="apimswincorememoryl110.dll" ComponentId="{D62DEAE1-9A87-482D-8522-9F59EB556C74}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorememoryl110.dll"/>
+    <ROW Component="apimswincorenamedpipel110.dll" ComponentId="{D59F916F-5CE8-46BC-B68B-6C21D720388D}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorenamedpipel110.dll"/>
+    <ROW Component="apimswincoreprocessenvironmentl110.dll" ComponentId="{680223E9-DCD4-4C69-8F53-540029453849}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprocessenvironmentl110.dll"/>
+    <ROW Component="apimswincoreprocessthreadsl110.dll" ComponentId="{F7E676F6-4D43-47B1-80C2-877448E655EE}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprocessthreadsl110.dll"/>
+    <ROW Component="apimswincoreprocessthreadsl111.dll" ComponentId="{56B68A77-BBE6-428A-AAD2-74BE66CF6F25}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprocessthreadsl111.dll"/>
+    <ROW Component="apimswincoreprofilel110.dll" ComponentId="{77B0C43D-9D7E-4EB8-A2B6-165B4DF255BF}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprofilel110.dll"/>
+    <ROW Component="apimswincorertlsupportl110.dll" ComponentId="{978E9188-37A0-419E-8674-6A6132CDB4BC}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorertlsupportl110.dll"/>
+    <ROW Component="apimswincorestringl110.dll" ComponentId="{DDC5DEB5-952D-460F-8FAA-62BCC0E42D97}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorestringl110.dll"/>
+    <ROW Component="apimswincoresynchl110.dll" ComponentId="{21F4F3A7-11D7-442E-A402-267ED5410611}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoresynchl110.dll"/>
+    <ROW Component="apimswincoresynchl120.dll" ComponentId="{D9FDC81E-BC9A-4CAA-9B17-BA3DE3023553}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoresynchl120.dll"/>
+    <ROW Component="apimswincoresysinfol110.dll" ComponentId="{E3A4F3A5-4990-4D5A-91AC-D74013723731}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoresysinfol110.dll"/>
+    <ROW Component="apimswincoretimezonel110.dll" ComponentId="{2074BC0E-589D-412C-9D34-B32D5BC21E89}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoretimezonel110.dll"/>
+    <ROW Component="apimswincoreutill110.dll" ComponentId="{D46FE886-111C-4946-837E-3DC42F262CD4}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreutill110.dll"/>
+    <ROW Component="apimswincrtconiol110.dll" ComponentId="{871DDF1E-4901-4702-A7D2-08E7CB6890E2}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtconiol110.dll"/>
+    <ROW Component="apimswincrtconvertl110.dll" ComponentId="{2BFF8E95-3C5F-4D0F-B046-3067DE2AFD87}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtconvertl110.dll"/>
+    <ROW Component="apimswincrtenvironmentl110.dll" ComponentId="{48542939-8E5E-43B8-AAC6-E4EE5B53011D}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtenvironmentl110.dll"/>
+    <ROW Component="apimswincrtfilesysteml110.dll" ComponentId="{6344E94B-6D38-4A88-B094-6B4529FD8179}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtfilesysteml110.dll"/>
+    <ROW Component="apimswincrtheapl110.dll" ComponentId="{5F1C7F76-E0D8-48AB-9CF1-7C9386C0A979}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtheapl110.dll"/>
+    <ROW Component="apimswincrtlocalel110.dll" ComponentId="{1DDF6775-506B-437C-A691-A86815EE34F6}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtlocalel110.dll"/>
+    <ROW Component="apimswincrtmathl110.dll" ComponentId="{C93AE812-3BC2-458C-AF7D-7E8EC78EFB95}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtmathl110.dll"/>
+    <ROW Component="apimswincrtmultibytel110.dll" ComponentId="{28DA5481-CD3F-455B-9FD5-7127E3BB6F73}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtmultibytel110.dll"/>
+    <ROW Component="apimswincrtprivatel110.dll" ComponentId="{35EF839F-90C7-4985-9A76-E187402F9A2B}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtprivatel110.dll"/>
+    <ROW Component="apimswincrtprocessl110.dll" ComponentId="{59DD87A0-B85E-45F9-AC7C-2825D398B03A}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtprocessl110.dll"/>
+    <ROW Component="apimswincrtruntimel110.dll" ComponentId="{49B6CC51-9D53-46AF-B58B-3785544D0E13}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtruntimel110.dll"/>
+    <ROW Component="apimswincrtstdiol110.dll" ComponentId="{53D9E584-8B0F-4774-BF34-CDD83A935532}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtstdiol110.dll"/>
+    <ROW Component="apimswincrtstringl110.dll" ComponentId="{17D6F1E2-3156-4D09-9C8E-A15EC364D8B4}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtstringl110.dll"/>
+    <ROW Component="apimswincrttimel110.dll" ComponentId="{5673E9B1-675E-4AB5-96D5-EDC59F729069}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrttimel110.dll"/>
+    <ROW Component="apimswincrtutilityl110.dll" ComponentId="{62863F6D-C7AD-45BA-A25E-74D7BF8CBE04}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtutilityl110.dll"/>
+    <ROW Component="awt.dll" ComponentId="{8E5FD83F-8274-4828-A8EA-334EE81EBBD8}" Directory_="bin_Dir" Attributes="256" KeyPath="awt.dll"/>
+    <ROW Component="blocked.certs" ComponentId="{CEE99C6C-33DF-4E47-9AAB-8827FE371403}" Directory_="security_1_Dir" Attributes="0" KeyPath="blocked.certs" Type="0"/>
+    <ROW Component="classes.jsa" ComponentId="{134E886C-676C-4AFB-95F0-216BA9605D4E}" Directory_="server_Dir" Attributes="0" KeyPath="classes.jsa" Type="0"/>
+    <ROW Component="classlist" ComponentId="{8A06957E-8006-4753-AE96-AAB0E757277A}" Directory_="lib_Dir" Attributes="0" KeyPath="classlist" Type="0"/>
+    <ROW Component="default.jfc" ComponentId="{23B1E24A-38B6-4812-80C2-84F88BA3F59D}" Directory_="jfr_Dir" Attributes="0" KeyPath="default.jfc" Type="0"/>
+    <ROW Component="default_local.policy" ComponentId="{65CBC25C-41F1-4998-9700-43F40C08F78B}" Directory_="limited_Dir" Attributes="0" KeyPath="default_local.policy" Type="0"/>
+    <ROW Component="default_local.policy_1" ComponentId="{50368999-32EC-4319-8301-38DA0E3DC2E9}" Directory_="unlimited_Dir" Attributes="0" KeyPath="default_local.policy_1" Type="0"/>
+    <ROW Component="dt_socket.dll" ComponentId="{6C705B4B-14E4-4FA2-A401-9B6D7D32BCB3}" Directory_="bin_Dir" Attributes="256" KeyPath="dt_socket.dll"/>
+    <ROW Component="extnet.dll" ComponentId="{1B7EC95E-C4DA-4546-8CAC-3AC37EA1DA54}" Directory_="bin_Dir" Attributes="256" KeyPath="extnet.dll"/>
+    <ROW Component="fontmanager.dll" ComponentId="{8FE657CA-3BC9-4D9C-8C7F-FDDEDAB565F5}" Directory_="bin_Dir" Attributes="256" KeyPath="fontmanager.dll"/>
+    <ROW Component="freetype.dll" ComponentId="{D5521CF3-C9F0-4483-A021-F25BE4F08D83}" Directory_="bin_Dir" Attributes="256" KeyPath="freetype.dll"/>
+    <ROW Component="instrument.dll" ComponentId="{B6489341-3C27-4534-8796-64D38A43481B}" Directory_="bin_Dir" Attributes="256" KeyPath="instrument.dll"/>
+    <ROW Component="j2gss.dll" ComponentId="{E29B1139-546F-426C-B306-CFA94937F6FE}" Directory_="bin_Dir" Attributes="256" KeyPath="j2gss.dll"/>
+    <ROW Component="j2pcsc.dll" ComponentId="{E68FE612-D564-4DA7-9BFF-8105662612AB}" Directory_="bin_Dir" Attributes="256" KeyPath="j2pcsc.dll"/>
+    <ROW Component="j2pkcs11.dll" ComponentId="{3348BA29-47B0-4E03-BB6F-D339CE77D8FE}" Directory_="bin_Dir" Attributes="256" KeyPath="j2pkcs11.dll"/>
+    <ROW Component="jaas.dll" ComponentId="{CEFF23A5-703B-46EB-90ED-55CC38CDB51E}" Directory_="bin_Dir" Attributes="256" KeyPath="jaas.dll"/>
+    <ROW Component="jabswitch.exe" ComponentId="{E73DEEB8-40FA-4025-9388-22B08F02F832}" Directory_="bin_Dir" Attributes="256" KeyPath="jabswitch.exe"/>
+    <ROW Component="jaccessinspector.exe" ComponentId="{7CF7DCAC-A262-4E63-A897-4722C372C0A2}" Directory_="bin_Dir" Attributes="256" KeyPath="jaccessinspector.exe"/>
+    <ROW Component="jaccesswalker.exe" ComponentId="{3A39FE51-9BA7-4B4E-9947-EA777F80194E}" Directory_="bin_Dir" Attributes="256" KeyPath="jaccesswalker.exe"/>
+    <ROW Component="java.dll" ComponentId="{D121ABD2-55BF-4779-92F2-0AFC1EF072AC}" Directory_="bin_Dir" Attributes="256" KeyPath="java.dll"/>
+    <ROW Component="java.exe" ComponentId="{6B578A70-B0A5-4A46-B4D6-BA5D87EA268F}" Directory_="bin_Dir" Attributes="256" KeyPath="java.exe"/>
+    <ROW Component="java.policy" ComponentId="{DB7A6A27-8BE5-4401-A945-5E55725FEF4A}" Directory_="security_Dir" Attributes="0" KeyPath="java.policy" Type="0"/>
+    <ROW Component="javaaccessbridge.dll" ComponentId="{4AB71200-1DFA-426D-A440-B973EA0EB779}" Directory_="bin_Dir" Attributes="256" KeyPath="javaaccessbridge.dll"/>
+    <ROW Component="javafx19aip1.0SNAPSHOT.jar" ComponentId="{D7B52E32-8C76-48C8-B58E-D32850C47B1D}" Directory_="APPDIR" Attributes="0" KeyPath="javafx19aip1.0SNAPSHOT.jar" Type="0"/>
+    <ROW Component="javafxbase19win.jar" ComponentId="{9EAE4A98-7029-46FF-BB9E-B258A0FE5E5B}" Directory_="dependency_Dir" Attributes="0" KeyPath="javafxbase19win.jar" Type="0"/>
+    <ROW Component="javafxexample.exe" ComponentId="{4DF66B82-9E7E-438E-8F72-2DAB1941231E}" Directory_="APPDIR" Attributes="0" KeyPath="javafxexample.exe"/>
+    <ROW Component="javajpeg.dll" ComponentId="{ECFD3498-69A3-4A13-BC5F-BACF9CF32E2B}" Directory_="bin_Dir" Attributes="256" KeyPath="javajpeg.dll"/>
+    <ROW Component="javaw.exe" ComponentId="{B9677697-4E9E-4376-9B3C-87664CC695B3}" Directory_="bin_Dir" Attributes="256" KeyPath="javaw.exe"/>
+    <ROW Component="jawt.dll" ComponentId="{68EB472E-E34F-4DF6-98B5-250B04225509}" Directory_="bin_Dir" Attributes="256" KeyPath="jawt.dll"/>
+    <ROW Component="jdwp.dll" ComponentId="{3A84F7FC-AD92-4285-9A52-AE64AEDE389C}" Directory_="bin_Dir" Attributes="256" KeyPath="jdwp.dll"/>
+    <ROW Component="jfr.exe" ComponentId="{FC3BB234-C1B5-4CF9-A86E-C3967B83BD3B}" Directory_="bin_Dir" Attributes="256" KeyPath="jfr.exe"/>
+    <ROW Component="jimage.dll" ComponentId="{7502984F-AF18-4E5D-A6C8-A1ABC47F134F}" Directory_="bin_Dir" Attributes="256" KeyPath="jimage.dll"/>
+    <ROW Component="jli.dll" ComponentId="{FE89896B-B56C-4B45-BCDF-FC442C64918D}" Directory_="bin_Dir" Attributes="256" KeyPath="jli.dll"/>
+    <ROW Component="jmxremote.access" ComponentId="{497A3357-C794-422C-8FDA-98F175F44573}" Directory_="management_Dir" Attributes="0" KeyPath="jmxremote.access" Type="0"/>
+    <ROW Component="jrunscript.exe" ComponentId="{A38601FF-0849-4F10-AE65-28BE236F0710}" Directory_="bin_Dir" Attributes="256" KeyPath="jrunscript.exe"/>
+    <ROW Component="jsound.dll" ComponentId="{2894D0EC-CB1B-4E5B-86BA-23CEF5B2F58F}" Directory_="bin_Dir" Attributes="256" KeyPath="jsound.dll"/>
+    <ROW Component="jsvml.dll" ComponentId="{4CA14547-DC86-4ED6-A6B0-B930D7433595}" Directory_="bin_Dir" Attributes="256" KeyPath="jsvml.dll"/>
+    <ROW Component="jvm.dll" ComponentId="{788055C9-68E8-4588-9A64-4BEBDC8A67A6}" Directory_="server_Dir" Attributes="256" KeyPath="jvm.dll"/>
+    <ROW Component="jwebserver.exe" ComponentId="{04CACE50-2789-4688-8B1E-F1DF5E55CFCA}" Directory_="bin_Dir" Attributes="256" KeyPath="jwebserver.exe"/>
+    <ROW Component="keytool.exe" ComponentId="{7B67E80D-84F8-41F7-B065-A68C81F85D4F}" Directory_="bin_Dir" Attributes="256" KeyPath="keytool.exe"/>
+    <ROW Component="kinit.exe" ComponentId="{808CCDC7-446D-4822-830D-00E9D6F7C91C}" Directory_="bin_Dir" Attributes="256" KeyPath="kinit.exe"/>
+    <ROW Component="klist.exe" ComponentId="{0E9A0F5E-21D3-41A1-B1CA-31E6E7134EC4}" Directory_="bin_Dir" Attributes="256" KeyPath="klist.exe"/>
+    <ROW Component="ktab.exe" ComponentId="{036BEA9D-71E1-4EF7-B5C7-11902FD5D3EC}" Directory_="bin_Dir" Attributes="256" KeyPath="ktab.exe"/>
+    <ROW Component="lcms.dll" ComponentId="{BC001793-B8A0-411C-92F7-6BADAEF0F88D}" Directory_="bin_Dir" Attributes="256" KeyPath="lcms.dll"/>
+    <ROW Component="logging.properties" ComponentId="{1528880D-4894-462B-A6E7-F0F7A765D3D2}" Directory_="conf_Dir" Attributes="0" KeyPath="logging.properties" Type="0"/>
+    <ROW Component="management.dll" ComponentId="{29A221D1-20D2-490C-958E-86967910AE56}" Directory_="bin_Dir" Attributes="256" KeyPath="management.dll"/>
+    <ROW Component="management_agent.dll" ComponentId="{D59990C1-C020-4581-AA71-CADFFA0A4CE5}" Directory_="bin_Dir" Attributes="256" KeyPath="management_agent.dll"/>
+    <ROW Component="management_ext.dll" ComponentId="{C6572935-0286-43D0-9E8D-F8B0BA06E542}" Directory_="bin_Dir" Attributes="256" KeyPath="management_ext.dll"/>
+    <ROW Component="mlib_image.dll" ComponentId="{DAEC8DCA-42A4-42AC-8AC9-1DD6BC9053AB}" Directory_="bin_Dir" Attributes="256" KeyPath="mlib_image.dll"/>
+    <ROW Component="msvcp140.dll" ComponentId="{7ED2A4B5-2D1B-4C6F-8C8B-5BD21C15298C}" Directory_="bin_Dir" Attributes="256" KeyPath="msvcp140.dll"/>
+    <ROW Component="net.dll" ComponentId="{764BDF43-D0DD-4EDE-92C7-73388B7E97E7}" Directory_="bin_Dir" Attributes="256" KeyPath="net.dll"/>
+    <ROW Component="nio.dll" ComponentId="{33B42905-930B-4203-94D1-A4EE661044D5}" Directory_="bin_Dir" Attributes="256" KeyPath="nio.dll"/>
+    <ROW Component="prefs.dll" ComponentId="{169A93BC-DB7B-412F-8BA6-40C57198EF25}" Directory_="bin_Dir" Attributes="256" KeyPath="prefs.dll"/>
+    <ROW Component="rmi.dll" ComponentId="{D03B5548-709A-4AE2-9621-F4217AC11135}" Directory_="bin_Dir" Attributes="256" KeyPath="rmi.dll"/>
+    <ROW Component="rmiregistry.exe" ComponentId="{EA5151E1-7702-4F85-A5D6-84AD79DCB529}" Directory_="bin_Dir" Attributes="256" KeyPath="rmiregistry.exe"/>
+    <ROW Component="splashscreen.dll" ComponentId="{7D077F0A-DCFF-46DF-BBE0-2CF31FE73084}" Directory_="bin_Dir" Attributes="256" KeyPath="splashscreen.dll"/>
+    <ROW Component="sspi_bridge.dll" ComponentId="{8B1D421E-ABBE-46A0-BE33-D47085270752}" Directory_="bin_Dir" Attributes="256" KeyPath="sspi_bridge.dll"/>
+    <ROW Component="sunmscapi.dll" ComponentId="{161FDF9F-98D1-4E28-8F4C-BA3B099762E4}" Directory_="bin_Dir" Attributes="256" KeyPath="sunmscapi.dll"/>
+    <ROW Component="syslookup.dll" ComponentId="{CC9AAB3F-C135-4E0B-AB68-5C64D4D1B1CE}" Directory_="bin_Dir" Attributes="256" KeyPath="syslookup.dll"/>
+    <ROW Component="ucrtbase.dll" ComponentId="{26B02723-9AFF-4C96-9FA7-783C30AD2B66}" Directory_="bin_Dir" Attributes="256" KeyPath="ucrtbase.dll"/>
+    <ROW Component="vcruntime140.dll" ComponentId="{88324E4B-0694-4BDF-88B5-DA73C28EC807}" Directory_="bin_Dir" Attributes="256" KeyPath="vcruntime140.dll"/>
+    <ROW Component="vcruntime140_1.dll" ComponentId="{04995E76-2B3F-4614-B138-B16E8D10EB0A}" Directory_="bin_Dir" Attributes="256" KeyPath="vcruntime140_1.dll"/>
+    <ROW Component="verify.dll" ComponentId="{33E3C6CA-5DC2-4D89-B5B7-37AC0405ADD0}" Directory_="bin_Dir" Attributes="256" KeyPath="verify.dll"/>
+    <ROW Component="w2k_lsa_auth.dll" ComponentId="{C5772E41-92E6-487C-976E-FF1121AC30DC}" Directory_="bin_Dir" Attributes="256" KeyPath="w2k_lsa_auth.dll"/>
+    <ROW Component="windowsaccessbridge64.dll" ComponentId="{9E01ACCF-451B-4274-A323-58138E99D136}" Directory_="bin_Dir" Attributes="256" KeyPath="windowsaccessbridge64.dll"/>
+    <ROW Component="zip.dll" ComponentId="{3DBE31D9-2A55-4ADF-B67C-7C2439B646EA}" Directory_="bin_Dir" Attributes="256" KeyPath="zip.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ROW Feature="bitJREBundle" Title="64-bit JRE Bundle" Description="This feature contains the 64-bit JRE bundle." Display="3" Level="1" Directory_="APPDIR" Attributes="0" Builds="DefaultBuild"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="javafxexample.exe" Component_="javafxexample.exe" FileName="JAVAFX~1.EXE|javafx-example.exe" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="javafx19aip1.0SNAPSHOT.jar" Component_="javafx19aip1.0SNAPSHOT.jar" FileName="JAVAFX~1.JAR|javafx-19-aip-1.0-SNAPSHOT.jar" Attributes="0" SourcePath="target\javafx-19-aip-1.0-SNAPSHOT.jar" SelfReg="false"/>
+    <ROW File="javafxbase19win.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~1.JAR|javafx-base-19-win.jar" Attributes="0" SourcePath="target\dependency\javafx-base-19-win.jar" SelfReg="false"/>
+    <ROW File="javafxbase19.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~2.JAR|javafx-base-19.jar" Attributes="0" SourcePath="target\dependency\javafx-base-19.jar" SelfReg="false"/>
+    <ROW File="javafxcontrols19win.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~3.JAR|javafx-controls-19-win.jar" Attributes="0" SourcePath="target\dependency\javafx-controls-19-win.jar" SelfReg="false"/>
+    <ROW File="javafxcontrols19.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~4.JAR|javafx-controls-19.jar" Attributes="0" SourcePath="target\dependency\javafx-controls-19.jar" SelfReg="false"/>
+    <ROW File="javafxfxml19win.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~5.JAR|javafx-fxml-19-win.jar" Attributes="0" SourcePath="target\dependency\javafx-fxml-19-win.jar" SelfReg="false"/>
+    <ROW File="javafxfxml19.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~6.JAR|javafx-fxml-19.jar" Attributes="0" SourcePath="target\dependency\javafx-fxml-19.jar" SelfReg="false"/>
+    <ROW File="javafxgraphics19win.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~7.JAR|javafx-graphics-19-win.jar" Attributes="0" SourcePath="target\dependency\javafx-graphics-19-win.jar" SelfReg="false"/>
+    <ROW File="javafxgraphics19.jar" Component_="javafxbase19win.jar" FileName="JAVAFX~8.JAR|javafx-graphics-19.jar" Attributes="0" SourcePath="target\dependency\javafx-graphics-19.jar" SelfReg="false"/>
+    <ROW File="apimswincoreconsolel110.dll" Component_="apimswincoreconsolel110.dll" FileName="API-MS~1.DLL|api-ms-win-core-console-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-console-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoredatetimel110.dll" Component_="apimswincoredatetimel110.dll" FileName="API-MS~3.DLL|api-ms-win-core-datetime-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-datetime-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoredebugl110.dll" Component_="apimswincoredebugl110.dll" FileName="API-MS~4.DLL|api-ms-win-core-debug-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-debug-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreerrorhandlingl110.dll" Component_="apimswincoreerrorhandlingl110.dll" FileName="API-MS~5.DLL|api-ms-win-core-errorhandling-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-errorhandling-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorefilel110.dll" Component_="apimswincorefilel110.dll" FileName="API-MS~7.DLL|api-ms-win-core-file-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-file-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorefilel120.dll" Component_="apimswincorefilel120.dll" FileName="API-MS~8.DLL|api-ms-win-core-file-l1-2-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-file-l1-2-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorefilel210.dll" Component_="apimswincorefilel210.dll" FileName="API-MS~9.DLL|api-ms-win-core-file-l2-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-file-l2-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorehandlel110.dll" Component_="apimswincorehandlel110.dll" FileName="API-M~10.DLL|api-ms-win-core-handle-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-handle-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreheapl110.dll" Component_="apimswincoreheapl110.dll" FileName="API-M~11.DLL|api-ms-win-core-heap-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-heap-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreinterlockedl110.dll" Component_="apimswincoreinterlockedl110.dll" FileName="API-M~12.DLL|api-ms-win-core-interlocked-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-interlocked-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorelibraryloaderl110.dll" Component_="apimswincorelibraryloaderl110.dll" FileName="API-M~13.DLL|api-ms-win-core-libraryloader-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-libraryloader-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorelocalizationl120.dll" Component_="apimswincorelocalizationl120.dll" FileName="API-M~14.DLL|api-ms-win-core-localization-l1-2-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-localization-l1-2-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorememoryl110.dll" Component_="apimswincorememoryl110.dll" FileName="API-M~15.DLL|api-ms-win-core-memory-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-memory-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorenamedpipel110.dll" Component_="apimswincorenamedpipel110.dll" FileName="API-M~16.DLL|api-ms-win-core-namedpipe-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-namedpipe-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprocessenvironmentl110.dll" Component_="apimswincoreprocessenvironmentl110.dll" FileName="API-M~17.DLL|api-ms-win-core-processenvironment-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-processenvironment-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprocessthreadsl110.dll" Component_="apimswincoreprocessthreadsl110.dll" FileName="API-M~18.DLL|api-ms-win-core-processthreads-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-processthreads-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprocessthreadsl111.dll" Component_="apimswincoreprocessthreadsl111.dll" FileName="API-M~19.DLL|api-ms-win-core-processthreads-l1-1-1.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-processthreads-l1-1-1.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprofilel110.dll" Component_="apimswincoreprofilel110.dll" FileName="API-M~20.DLL|api-ms-win-core-profile-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-profile-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorertlsupportl110.dll" Component_="apimswincorertlsupportl110.dll" FileName="API-M~21.DLL|api-ms-win-core-rtlsupport-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-rtlsupport-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorestringl110.dll" Component_="apimswincorestringl110.dll" FileName="API-M~22.DLL|api-ms-win-core-string-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-string-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoresynchl110.dll" Component_="apimswincoresynchl110.dll" FileName="API-M~23.DLL|api-ms-win-core-synch-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-synch-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoresynchl120.dll" Component_="apimswincoresynchl120.dll" FileName="API-M~24.DLL|api-ms-win-core-synch-l1-2-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-synch-l1-2-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoresysinfol110.dll" Component_="apimswincoresysinfol110.dll" FileName="API-M~25.DLL|api-ms-win-core-sysinfo-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-sysinfo-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoretimezonel110.dll" Component_="apimswincoretimezonel110.dll" FileName="API-M~26.DLL|api-ms-win-core-timezone-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-timezone-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreutill110.dll" Component_="apimswincoreutill110.dll" FileName="API-M~27.DLL|api-ms-win-core-util-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-core-util-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtconiol110.dll" Component_="apimswincrtconiol110.dll" FileName="API-M~28.DLL|api-ms-win-crt-conio-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-conio-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtconvertl110.dll" Component_="apimswincrtconvertl110.dll" FileName="API-M~29.DLL|api-ms-win-crt-convert-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-convert-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtenvironmentl110.dll" Component_="apimswincrtenvironmentl110.dll" FileName="API-M~30.DLL|api-ms-win-crt-environment-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-environment-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtfilesysteml110.dll" Component_="apimswincrtfilesysteml110.dll" FileName="API-M~31.DLL|api-ms-win-crt-filesystem-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-filesystem-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtheapl110.dll" Component_="apimswincrtheapl110.dll" FileName="API-M~32.DLL|api-ms-win-crt-heap-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-heap-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtlocalel110.dll" Component_="apimswincrtlocalel110.dll" FileName="API-M~33.DLL|api-ms-win-crt-locale-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-locale-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtmathl110.dll" Component_="apimswincrtmathl110.dll" FileName="API-M~34.DLL|api-ms-win-crt-math-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-math-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtmultibytel110.dll" Component_="apimswincrtmultibytel110.dll" FileName="API-M~35.DLL|api-ms-win-crt-multibyte-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-multibyte-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtprivatel110.dll" Component_="apimswincrtprivatel110.dll" FileName="API-M~36.DLL|api-ms-win-crt-private-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-private-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtprocessl110.dll" Component_="apimswincrtprocessl110.dll" FileName="API-M~37.DLL|api-ms-win-crt-process-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-process-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtruntimel110.dll" Component_="apimswincrtruntimel110.dll" FileName="API-M~38.DLL|api-ms-win-crt-runtime-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-runtime-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtstdiol110.dll" Component_="apimswincrtstdiol110.dll" FileName="API-M~39.DLL|api-ms-win-crt-stdio-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-stdio-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtstringl110.dll" Component_="apimswincrtstringl110.dll" FileName="API-M~40.DLL|api-ms-win-crt-string-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-string-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrttimel110.dll" Component_="apimswincrttimel110.dll" FileName="API-M~41.DLL|api-ms-win-crt-time-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-time-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtutilityl110.dll" Component_="apimswincrtutilityl110.dll" FileName="API-M~42.DLL|api-ms-win-crt-utility-l1-1-0.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\api-ms-win-crt-utility-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="awt.dll" Component_="awt.dll" FileName="awt.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\awt.dll" SelfReg="false"/>
+    <ROW File="dt_socket.dll" Component_="dt_socket.dll" FileName="DT_SOC~1.DLL|dt_socket.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\dt_socket.dll" SelfReg="false"/>
+    <ROW File="extnet.dll" Component_="extnet.dll" FileName="extnet.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\extnet.dll" SelfReg="false"/>
+    <ROW File="fontmanager.dll" Component_="fontmanager.dll" FileName="FONTMA~1.DLL|fontmanager.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\fontmanager.dll" SelfReg="false"/>
+    <ROW File="freetype.dll" Component_="freetype.dll" FileName="freetype.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\freetype.dll" SelfReg="false"/>
+    <ROW File="instrument.dll" Component_="instrument.dll" FileName="INSTRU~1.DLL|instrument.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\instrument.dll" SelfReg="false"/>
+    <ROW File="j2gss.dll" Component_="j2gss.dll" FileName="j2gss.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\j2gss.dll" SelfReg="false"/>
+    <ROW File="j2pcsc.dll" Component_="j2pcsc.dll" FileName="j2pcsc.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\j2pcsc.dll" SelfReg="false"/>
+    <ROW File="j2pkcs11.dll" Component_="j2pkcs11.dll" FileName="j2pkcs11.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\j2pkcs11.dll" SelfReg="false"/>
+    <ROW File="jaas.dll" Component_="jaas.dll" FileName="jaas.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jaas.dll" SelfReg="false"/>
+    <ROW File="jabswitch.exe" Component_="jabswitch.exe" FileName="JABSWI~1.EXE|jabswitch.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jabswitch.exe" SelfReg="false"/>
+    <ROW File="jaccessinspector.exe" Component_="jaccessinspector.exe" FileName="JACCES~1.EXE|jaccessinspector.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jaccessinspector.exe" SelfReg="false"/>
+    <ROW File="jaccesswalker.exe" Component_="jaccesswalker.exe" FileName="JACCES~2.EXE|jaccesswalker.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jaccesswalker.exe" SelfReg="false"/>
+    <ROW File="java.dll" Component_="java.dll" FileName="java.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\java.dll" SelfReg="false"/>
+    <ROW File="java.exe" Component_="java.exe" FileName="java.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\java.exe" SelfReg="false"/>
+    <ROW File="javaaccessbridge.dll" Component_="javaaccessbridge.dll" FileName="JAVAAC~1.DLL|javaaccessbridge.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\javaaccessbridge.dll" SelfReg="false"/>
+    <ROW File="javajpeg.dll" Component_="javajpeg.dll" FileName="javajpeg.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\javajpeg.dll" SelfReg="false"/>
+    <ROW File="javaw.exe" Component_="javaw.exe" FileName="javaw.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\javaw.exe" SelfReg="false"/>
+    <ROW File="jawt.dll" Component_="jawt.dll" FileName="jawt.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jawt.dll" SelfReg="false"/>
+    <ROW File="jdwp.dll" Component_="jdwp.dll" FileName="jdwp.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jdwp.dll" SelfReg="false"/>
+    <ROW File="jfr.exe" Component_="jfr.exe" FileName="jfr.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jfr.exe" SelfReg="false"/>
+    <ROW File="jimage.dll" Component_="jimage.dll" FileName="jimage.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jimage.dll" SelfReg="false"/>
+    <ROW File="jli.dll" Component_="jli.dll" FileName="jli.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jli.dll" SelfReg="false"/>
+    <ROW File="jrunscript.exe" Component_="jrunscript.exe" FileName="JRUNSC~1.EXE|jrunscript.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jrunscript.exe" SelfReg="false"/>
+    <ROW File="jsound.dll" Component_="jsound.dll" FileName="jsound.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jsound.dll" SelfReg="false"/>
+    <ROW File="jsvml.dll" Component_="jsvml.dll" FileName="jsvml.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jsvml.dll" SelfReg="false"/>
+    <ROW File="jwebserver.exe" Component_="jwebserver.exe" FileName="JWEBSE~1.EXE|jwebserver.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\jwebserver.exe" SelfReg="false"/>
+    <ROW File="keytool.exe" Component_="keytool.exe" FileName="keytool.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\keytool.exe" SelfReg="false"/>
+    <ROW File="kinit.exe" Component_="kinit.exe" FileName="kinit.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\kinit.exe" SelfReg="false"/>
+    <ROW File="klist.exe" Component_="klist.exe" FileName="klist.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\klist.exe" SelfReg="false"/>
+    <ROW File="ktab.exe" Component_="ktab.exe" FileName="ktab.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\ktab.exe" SelfReg="false"/>
+    <ROW File="lcms.dll" Component_="lcms.dll" FileName="lcms.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\lcms.dll" SelfReg="false"/>
+    <ROW File="management.dll" Component_="management.dll" FileName="MANAGE~1.DLL|management.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\management.dll" SelfReg="false"/>
+    <ROW File="management_agent.dll" Component_="management_agent.dll" FileName="MANAGE~2.DLL|management_agent.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\management_agent.dll" SelfReg="false"/>
+    <ROW File="management_ext.dll" Component_="management_ext.dll" FileName="MANAGE~3.DLL|management_ext.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\management_ext.dll" SelfReg="false"/>
+    <ROW File="mlib_image.dll" Component_="mlib_image.dll" FileName="MLIB_I~1.DLL|mlib_image.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\mlib_image.dll" SelfReg="false"/>
+    <ROW File="msvcp140.dll" Component_="msvcp140.dll" FileName="msvcp140.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\msvcp140.dll" SelfReg="false"/>
+    <ROW File="net.dll" Component_="net.dll" FileName="net.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\net.dll" SelfReg="false"/>
+    <ROW File="nio.dll" Component_="nio.dll" FileName="nio.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\nio.dll" SelfReg="false"/>
+    <ROW File="prefs.dll" Component_="prefs.dll" FileName="prefs.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\prefs.dll" SelfReg="false"/>
+    <ROW File="rmi.dll" Component_="rmi.dll" FileName="rmi.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\rmi.dll" SelfReg="false"/>
+    <ROW File="rmiregistry.exe" Component_="rmiregistry.exe" FileName="RMIREG~1.EXE|rmiregistry.exe" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\rmiregistry.exe" SelfReg="false"/>
+    <ROW File="classes.jsa" Component_="classes.jsa" FileName="classes.jsa" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\server\classes.jsa" SelfReg="false"/>
+    <ROW File="classes_nocoops.jsa" Component_="classes.jsa" FileName="CLASSE~1.JSA|classes_nocoops.jsa" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\server\classes_nocoops.jsa" SelfReg="false"/>
+    <ROW File="jvm.dll" Component_="jvm.dll" FileName="jvm.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\server\jvm.dll" SelfReg="false"/>
+    <ROW File="splashscreen.dll" Component_="splashscreen.dll" FileName="SPLASH~1.DLL|splashscreen.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\splashscreen.dll" SelfReg="false"/>
+    <ROW File="sspi_bridge.dll" Component_="sspi_bridge.dll" FileName="SSPI_B~1.DLL|sspi_bridge.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\sspi_bridge.dll" SelfReg="false"/>
+    <ROW File="sunmscapi.dll" Component_="sunmscapi.dll" FileName="SUNMSC~1.DLL|sunmscapi.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\sunmscapi.dll" SelfReg="false"/>
+    <ROW File="syslookup.dll" Component_="syslookup.dll" FileName="SYSLOO~1.DLL|syslookup.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\syslookup.dll" SelfReg="false"/>
+    <ROW File="ucrtbase.dll" Component_="ucrtbase.dll" FileName="ucrtbase.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\ucrtbase.dll" SelfReg="false"/>
+    <ROW File="vcruntime140.dll" Component_="vcruntime140.dll" FileName="VCRUNT~1.DLL|vcruntime140.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\vcruntime140.dll" SelfReg="false"/>
+    <ROW File="vcruntime140_1.dll" Component_="vcruntime140_1.dll" FileName="VCRUNT~2.DLL|vcruntime140_1.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\vcruntime140_1.dll" SelfReg="false"/>
+    <ROW File="verify.dll" Component_="verify.dll" FileName="verify.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\verify.dll" SelfReg="false"/>
+    <ROW File="w2k_lsa_auth.dll" Component_="w2k_lsa_auth.dll" FileName="W2K_LS~1.DLL|w2k_lsa_auth.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\w2k_lsa_auth.dll" SelfReg="false"/>
+    <ROW File="windowsaccessbridge64.dll" Component_="windowsaccessbridge64.dll" FileName="WINDOW~1.DLL|windowsaccessbridge-64.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\windowsaccessbridge-64.dll" SelfReg="false"/>
+    <ROW File="zip.dll" Component_="zip.dll" FileName="zip.dll" Attributes="0" SourcePath="target\jdk-19+36-jre\bin\zip.dll" SelfReg="false"/>
+    <ROW File="logging.properties" Component_="logging.properties" FileName="LOGGIN~1.PRO|logging.properties" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\logging.properties" SelfReg="false"/>
+    <ROW File="jmxremote.access" Component_="jmxremote.access" FileName="JMXREM~1.ACC|jmxremote.access" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\management\jmxremote.access" SelfReg="false"/>
+    <ROW File="jmxremote.password.template" Component_="jmxremote.access" FileName="JMXREM~1.TEM|jmxremote.password.template" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\management\jmxremote.password.template" SelfReg="false"/>
+    <ROW File="management.properties" Component_="jmxremote.access" FileName="MANAGE~1.PRO|management.properties" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\management\management.properties" SelfReg="false"/>
+    <ROW File="net.properties" Component_="logging.properties" FileName="NET~1.PRO|net.properties" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\net.properties" SelfReg="false"/>
+    <ROW File="java.policy" Component_="java.policy" FileName="JAVA~1.POL|java.policy" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\java.policy" SelfReg="false"/>
+    <ROW File="java.security" Component_="java.policy" FileName="JAVA~1.SEC|java.security" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\java.security" SelfReg="false"/>
+    <ROW File="default_local.policy" Component_="default_local.policy" FileName="DEFAUL~1.POL|default_local.policy" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\policy\limited\default_local.policy" SelfReg="false"/>
+    <ROW File="default_US_export.policy" Component_="default_local.policy" FileName="DEFAUL~2.POL|default_US_export.policy" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\policy\limited\default_US_export.policy" SelfReg="false"/>
+    <ROW File="exempt_local.policy" Component_="default_local.policy" FileName="EXEMPT~1.POL|exempt_local.policy" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\policy\limited\exempt_local.policy" SelfReg="false"/>
+    <ROW File="README.txt" Component_="README.txt" FileName="README.txt" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\policy\README.txt" SelfReg="false"/>
+    <ROW File="default_local.policy_1" Component_="default_local.policy_1" FileName="DEFAUL~1.POL|default_local.policy" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\policy\unlimited\default_local.policy" SelfReg="false"/>
+    <ROW File="default_US_export.policy_1" Component_="default_local.policy_1" FileName="DEFAUL~2.POL|default_US_export.policy" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\security\policy\unlimited\default_US_export.policy" SelfReg="false"/>
+    <ROW File="sound.properties" Component_="logging.properties" FileName="SOUND~1.PRO|sound.properties" Attributes="0" SourcePath="target\jdk-19+36-jre\conf\sound.properties" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO" Component_="ADDITIONAL_LICENSE_INFO" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="aes.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="aes.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\aes.md" SelfReg="false"/>
+    <ROW File="asm.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="asm.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\asm.md" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION" Component_="ADDITIONAL_LICENSE_INFO" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="clibutl.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="c-libutl.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\c-libutl.md" SelfReg="false"/>
+    <ROW File="cldr.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="cldr.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\cldr.md" SelfReg="false"/>
+    <ROW File="icu.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="icu.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\icu.md" SelfReg="false"/>
+    <ROW File="LICENSE" Component_="ADDITIONAL_LICENSE_INFO" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\LICENSE" SelfReg="false"/>
+    <ROW File="public_suffix.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="PUBLIC~1.MD|public_suffix.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\public_suffix.md" SelfReg="false"/>
+    <ROW File="unicode.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="unicode.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\unicode.md" SelfReg="false"/>
+    <ROW File="wepoll.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="wepoll.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\wepoll.md" SelfReg="false"/>
+    <ROW File="zlib.md" Component_="ADDITIONAL_LICENSE_INFO" FileName="zlib.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.base\zlib.md" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_1" Component_="ADDITIONAL_LICENSE_INFO_1" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.compiler\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_1" Component_="ADDITIONAL_LICENSE_INFO_1" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.compiler\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_1" Component_="ADDITIONAL_LICENSE_INFO_1" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.compiler\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_2" Component_="ADDITIONAL_LICENSE_INFO_2" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.datatransfer\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_2" Component_="ADDITIONAL_LICENSE_INFO_2" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.datatransfer\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_2" Component_="ADDITIONAL_LICENSE_INFO_2" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.datatransfer\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_3" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_3" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="colorimaging.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="COLORI~1.MD|colorimaging.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\colorimaging.md" SelfReg="false"/>
+    <ROW File="freetype.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="freetype.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\freetype.md" SelfReg="false"/>
+    <ROW File="giflib.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="giflib.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\giflib.md" SelfReg="false"/>
+    <ROW File="harfbuzz.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="harfbuzz.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\harfbuzz.md" SelfReg="false"/>
+    <ROW File="jpeg.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="jpeg.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\jpeg.md" SelfReg="false"/>
+    <ROW File="lcms.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="lcms.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\lcms.md" SelfReg="false"/>
+    <ROW File="libpng.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="libpng.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\libpng.md" SelfReg="false"/>
+    <ROW File="LICENSE_3" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\LICENSE" SelfReg="false"/>
+    <ROW File="mesa3d.md" Component_="ADDITIONAL_LICENSE_INFO_3" FileName="mesa3d.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.desktop\mesa3d.md" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_4" Component_="ADDITIONAL_LICENSE_INFO_4" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.instrument\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_4" Component_="ADDITIONAL_LICENSE_INFO_4" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.instrument\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_4" Component_="ADDITIONAL_LICENSE_INFO_4" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.instrument\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_5" Component_="ADDITIONAL_LICENSE_INFO_5" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.logging\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_5" Component_="ADDITIONAL_LICENSE_INFO_5" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.logging\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_5" Component_="ADDITIONAL_LICENSE_INFO_5" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.logging\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_6" Component_="ADDITIONAL_LICENSE_INFO_6" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.management\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_6" Component_="ADDITIONAL_LICENSE_INFO_6" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.management\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_6" Component_="ADDITIONAL_LICENSE_INFO_6" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.management\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_7" Component_="ADDITIONAL_LICENSE_INFO_7" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.management.rmi\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_7" Component_="ADDITIONAL_LICENSE_INFO_7" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.management.rmi\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_7" Component_="ADDITIONAL_LICENSE_INFO_7" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.management.rmi\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_8" Component_="ADDITIONAL_LICENSE_INFO_8" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.naming\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_8" Component_="ADDITIONAL_LICENSE_INFO_8" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.naming\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_8" Component_="ADDITIONAL_LICENSE_INFO_8" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.naming\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_9" Component_="ADDITIONAL_LICENSE_INFO_9" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.net.http\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_9" Component_="ADDITIONAL_LICENSE_INFO_9" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.net.http\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_9" Component_="ADDITIONAL_LICENSE_INFO_9" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.net.http\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_10" Component_="ADDITIONAL_LICENSE_INFO_10" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.prefs\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_10" Component_="ADDITIONAL_LICENSE_INFO_10" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.prefs\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_10" Component_="ADDITIONAL_LICENSE_INFO_10" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.prefs\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_11" Component_="ADDITIONAL_LICENSE_INFO_11" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.rmi\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_11" Component_="ADDITIONAL_LICENSE_INFO_11" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.rmi\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_11" Component_="ADDITIONAL_LICENSE_INFO_11" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.rmi\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_12" Component_="ADDITIONAL_LICENSE_INFO_12" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.scripting\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_12" Component_="ADDITIONAL_LICENSE_INFO_12" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.scripting\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_12" Component_="ADDITIONAL_LICENSE_INFO_12" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.scripting\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_13" Component_="ADDITIONAL_LICENSE_INFO_13" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.se\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_13" Component_="ADDITIONAL_LICENSE_INFO_13" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.se\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_13" Component_="ADDITIONAL_LICENSE_INFO_13" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.se\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_14" Component_="ADDITIONAL_LICENSE_INFO_14" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.security.jgss\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_14" Component_="ADDITIONAL_LICENSE_INFO_14" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.security.jgss\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_14" Component_="ADDITIONAL_LICENSE_INFO_14" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.security.jgss\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_15" Component_="ADDITIONAL_LICENSE_INFO_15" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.security.sasl\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_15" Component_="ADDITIONAL_LICENSE_INFO_15" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.security.sasl\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_15" Component_="ADDITIONAL_LICENSE_INFO_15" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.security.sasl\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_16" Component_="ADDITIONAL_LICENSE_INFO_16" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.smartcardio\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_16" Component_="ADDITIONAL_LICENSE_INFO_16" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.smartcardio\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_16" Component_="ADDITIONAL_LICENSE_INFO_16" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.smartcardio\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_17" Component_="ADDITIONAL_LICENSE_INFO_17" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.sql\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_17" Component_="ADDITIONAL_LICENSE_INFO_17" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.sql\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_17" Component_="ADDITIONAL_LICENSE_INFO_17" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.sql\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_18" Component_="ADDITIONAL_LICENSE_INFO_18" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.sql.rowset\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_18" Component_="ADDITIONAL_LICENSE_INFO_18" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.sql.rowset\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_18" Component_="ADDITIONAL_LICENSE_INFO_18" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.sql.rowset\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_19" Component_="ADDITIONAL_LICENSE_INFO_19" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.transaction.xa\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_19" Component_="ADDITIONAL_LICENSE_INFO_19" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.transaction.xa\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_19" Component_="ADDITIONAL_LICENSE_INFO_19" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.transaction.xa\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_20" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_20" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="bcel.md" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="bcel.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\bcel.md" SelfReg="false"/>
+    <ROW File="dom.md" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="dom.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\dom.md" SelfReg="false"/>
+    <ROW File="jcup.md" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="jcup.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\jcup.md" SelfReg="false"/>
+    <ROW File="LICENSE_20" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\LICENSE" SelfReg="false"/>
+    <ROW File="xalan.md" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="xalan.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\xalan.md" SelfReg="false"/>
+    <ROW File="xerces.md" Component_="ADDITIONAL_LICENSE_INFO_20" FileName="xerces.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml\xerces.md" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_21" Component_="ADDITIONAL_LICENSE_INFO_21" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml.crypto\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_21" Component_="ADDITIONAL_LICENSE_INFO_21" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml.crypto\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_21" Component_="ADDITIONAL_LICENSE_INFO_21" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml.crypto\LICENSE" SelfReg="false"/>
+    <ROW File="santuario.md" Component_="ADDITIONAL_LICENSE_INFO_21" FileName="SANTUA~1.MD|santuario.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\java.xml.crypto\santuario.md" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_22" Component_="ADDITIONAL_LICENSE_INFO_22" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.accessibility\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_22" Component_="ADDITIONAL_LICENSE_INFO_22" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.accessibility\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_22" Component_="ADDITIONAL_LICENSE_INFO_22" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.accessibility\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_23" Component_="ADDITIONAL_LICENSE_INFO_23" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.charsets\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_23" Component_="ADDITIONAL_LICENSE_INFO_23" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.charsets\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_23" Component_="ADDITIONAL_LICENSE_INFO_23" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.charsets\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_24" Component_="ADDITIONAL_LICENSE_INFO_24" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.cryptoki\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_24" Component_="ADDITIONAL_LICENSE_INFO_24" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.cryptoki\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_24" Component_="ADDITIONAL_LICENSE_INFO_24" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.cryptoki\LICENSE" SelfReg="false"/>
+    <ROW File="pkcs11cryptotoken.md" Component_="ADDITIONAL_LICENSE_INFO_24" FileName="PKCS11~1.MD|pkcs11cryptotoken.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.cryptoki\pkcs11cryptotoken.md" SelfReg="false"/>
+    <ROW File="pkcs11wrapper.md" Component_="ADDITIONAL_LICENSE_INFO_24" FileName="PKCS11~2.MD|pkcs11wrapper.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.cryptoki\pkcs11wrapper.md" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_25" Component_="ADDITIONAL_LICENSE_INFO_25" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.ec\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_25" Component_="ADDITIONAL_LICENSE_INFO_25" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.ec\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_25" Component_="ADDITIONAL_LICENSE_INFO_25" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.ec\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_26" Component_="ADDITIONAL_LICENSE_INFO_26" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.mscapi\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_26" Component_="ADDITIONAL_LICENSE_INFO_26" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.mscapi\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_26" Component_="ADDITIONAL_LICENSE_INFO_26" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.crypto.mscapi\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_27" Component_="ADDITIONAL_LICENSE_INFO_27" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.dynalink\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_27" Component_="ADDITIONAL_LICENSE_INFO_27" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.dynalink\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="dynalink.md" Component_="ADDITIONAL_LICENSE_INFO_27" FileName="dynalink.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.dynalink\dynalink.md" SelfReg="false"/>
+    <ROW File="LICENSE_27" Component_="ADDITIONAL_LICENSE_INFO_27" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.dynalink\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_28" Component_="ADDITIONAL_LICENSE_INFO_28" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.httpserver\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_28" Component_="ADDITIONAL_LICENSE_INFO_28" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.httpserver\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_28" Component_="ADDITIONAL_LICENSE_INFO_28" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.httpserver\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_29" Component_="ADDITIONAL_LICENSE_INFO_29" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.incubator.concurrent\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_29" Component_="ADDITIONAL_LICENSE_INFO_29" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.incubator.concurrent\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_29" Component_="ADDITIONAL_LICENSE_INFO_29" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.incubator.concurrent\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_30" Component_="ADDITIONAL_LICENSE_INFO_30" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.incubator.vector\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_30" Component_="ADDITIONAL_LICENSE_INFO_30" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.incubator.vector\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_30" Component_="ADDITIONAL_LICENSE_INFO_30" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.incubator.vector\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_31" Component_="ADDITIONAL_LICENSE_INFO_31" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.ci\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_31" Component_="ADDITIONAL_LICENSE_INFO_31" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.ci\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_31" Component_="ADDITIONAL_LICENSE_INFO_31" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.ci\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_32" Component_="ADDITIONAL_LICENSE_INFO_32" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.compiler\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_32" Component_="ADDITIONAL_LICENSE_INFO_32" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.compiler\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_32" Component_="ADDITIONAL_LICENSE_INFO_32" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.compiler\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_33" Component_="ADDITIONAL_LICENSE_INFO_33" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.compiler.management\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_33" Component_="ADDITIONAL_LICENSE_INFO_33" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.compiler.management\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_33" Component_="ADDITIONAL_LICENSE_INFO_33" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.internal.vm.compiler.management\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_34" Component_="ADDITIONAL_LICENSE_INFO_34" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jdwp.agent\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_34" Component_="ADDITIONAL_LICENSE_INFO_34" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jdwp.agent\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_34" Component_="ADDITIONAL_LICENSE_INFO_34" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jdwp.agent\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_35" Component_="ADDITIONAL_LICENSE_INFO_35" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jfr\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_35" Component_="ADDITIONAL_LICENSE_INFO_35" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jfr\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_35" Component_="ADDITIONAL_LICENSE_INFO_35" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jfr\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_36" Component_="ADDITIONAL_LICENSE_INFO_36" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jsobject\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_36" Component_="ADDITIONAL_LICENSE_INFO_36" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jsobject\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_36" Component_="ADDITIONAL_LICENSE_INFO_36" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.jsobject\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_37" Component_="ADDITIONAL_LICENSE_INFO_37" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.localedata\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_37" Component_="ADDITIONAL_LICENSE_INFO_37" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.localedata\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="cldr.md_1" Component_="ADDITIONAL_LICENSE_INFO_37" FileName="cldr.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.localedata\cldr.md" SelfReg="false"/>
+    <ROW File="LICENSE_37" Component_="ADDITIONAL_LICENSE_INFO_37" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.localedata\LICENSE" SelfReg="false"/>
+    <ROW File="thaidict.md" Component_="ADDITIONAL_LICENSE_INFO_37" FileName="thaidict.md" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.localedata\thaidict.md" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_38" Component_="ADDITIONAL_LICENSE_INFO_38" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_38" Component_="ADDITIONAL_LICENSE_INFO_38" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_38" Component_="ADDITIONAL_LICENSE_INFO_38" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_39" Component_="ADDITIONAL_LICENSE_INFO_39" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management.agent\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_39" Component_="ADDITIONAL_LICENSE_INFO_39" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management.agent\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_39" Component_="ADDITIONAL_LICENSE_INFO_39" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management.agent\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_40" Component_="ADDITIONAL_LICENSE_INFO_40" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management.jfr\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_40" Component_="ADDITIONAL_LICENSE_INFO_40" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management.jfr\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_40" Component_="ADDITIONAL_LICENSE_INFO_40" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.management.jfr\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_41" Component_="ADDITIONAL_LICENSE_INFO_41" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.naming.dns\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_41" Component_="ADDITIONAL_LICENSE_INFO_41" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.naming.dns\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_41" Component_="ADDITIONAL_LICENSE_INFO_41" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.naming.dns\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_42" Component_="ADDITIONAL_LICENSE_INFO_42" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.naming.rmi\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_42" Component_="ADDITIONAL_LICENSE_INFO_42" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.naming.rmi\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_42" Component_="ADDITIONAL_LICENSE_INFO_42" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.naming.rmi\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_43" Component_="ADDITIONAL_LICENSE_INFO_43" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.net\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_43" Component_="ADDITIONAL_LICENSE_INFO_43" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.net\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_43" Component_="ADDITIONAL_LICENSE_INFO_43" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.net\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_44" Component_="ADDITIONAL_LICENSE_INFO_44" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.nio.mapmode\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_44" Component_="ADDITIONAL_LICENSE_INFO_44" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.nio.mapmode\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_44" Component_="ADDITIONAL_LICENSE_INFO_44" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.nio.mapmode\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_45" Component_="ADDITIONAL_LICENSE_INFO_45" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.sctp\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_45" Component_="ADDITIONAL_LICENSE_INFO_45" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.sctp\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_45" Component_="ADDITIONAL_LICENSE_INFO_45" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.sctp\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_46" Component_="ADDITIONAL_LICENSE_INFO_46" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.security.auth\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_46" Component_="ADDITIONAL_LICENSE_INFO_46" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.security.auth\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_46" Component_="ADDITIONAL_LICENSE_INFO_46" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.security.auth\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_47" Component_="ADDITIONAL_LICENSE_INFO_47" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.security.jgss\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_47" Component_="ADDITIONAL_LICENSE_INFO_47" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.security.jgss\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_47" Component_="ADDITIONAL_LICENSE_INFO_47" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.security.jgss\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_48" Component_="ADDITIONAL_LICENSE_INFO_48" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.unsupported\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_48" Component_="ADDITIONAL_LICENSE_INFO_48" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.unsupported\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_48" Component_="ADDITIONAL_LICENSE_INFO_48" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.unsupported\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_49" Component_="ADDITIONAL_LICENSE_INFO_49" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.xml.dom\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_49" Component_="ADDITIONAL_LICENSE_INFO_49" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.xml.dom\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_49" Component_="ADDITIONAL_LICENSE_INFO_49" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.xml.dom\LICENSE" SelfReg="false"/>
+    <ROW File="ADDITIONAL_LICENSE_INFO_50" Component_="ADDITIONAL_LICENSE_INFO_50" FileName="ADDITI~1|ADDITIONAL_LICENSE_INFO" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.zipfs\ADDITIONAL_LICENSE_INFO" SelfReg="false"/>
+    <ROW File="ASSEMBLY_EXCEPTION_50" Component_="ADDITIONAL_LICENSE_INFO_50" FileName="ASSEMB~1|ASSEMBLY_EXCEPTION" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.zipfs\ASSEMBLY_EXCEPTION" SelfReg="false"/>
+    <ROW File="LICENSE_50" Component_="ADDITIONAL_LICENSE_INFO_50" FileName="LICENSE" Attributes="0" SourcePath="target\jdk-19+36-jre\legal\jdk.zipfs\LICENSE" SelfReg="false"/>
+    <ROW File="classlist" Component_="classlist" FileName="CLASSL~1|classlist" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\classlist" SelfReg="false"/>
+    <ROW File="fontconfig.bfc" Component_="classlist" FileName="FONTCO~1.BFC|fontconfig.bfc" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\fontconfig.bfc" SelfReg="false"/>
+    <ROW File="fontconfig.properties.src" Component_="classlist" FileName="FONTCO~1.SRC|fontconfig.properties.src" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\fontconfig.properties.src" SelfReg="false"/>
+    <ROW File="jawt.lib" Component_="classlist" FileName="jawt.lib" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\jawt.lib" SelfReg="false"/>
+    <ROW File="default.jfc" Component_="default.jfc" FileName="default.jfc" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\jfr\default.jfc" SelfReg="false"/>
+    <ROW File="profile.jfc" Component_="default.jfc" FileName="profile.jfc" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\jfr\profile.jfc" SelfReg="false"/>
+    <ROW File="jrtfs.jar" Component_="classlist" FileName="jrt-fs.jar" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\jrt-fs.jar" SelfReg="false"/>
+    <ROW File="jvm.cfg" Component_="classlist" FileName="jvm.cfg" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\jvm.cfg" SelfReg="false"/>
+    <ROW File="jvm.lib" Component_="classlist" FileName="jvm.lib" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\jvm.lib" SelfReg="false"/>
+    <ROW File="modules" Component_="classlist" FileName="modules" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\modules" SelfReg="false"/>
+    <ROW File="psfont.properties.ja" Component_="classlist" FileName="PSFONT~1.JA|psfont.properties.ja" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\psfont.properties.ja" SelfReg="false"/>
+    <ROW File="psfontj2d.properties" Component_="classlist" FileName="PSFONT~1.PRO|psfontj2d.properties" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\psfontj2d.properties" SelfReg="false"/>
+    <ROW File="blocked.certs" Component_="blocked.certs" FileName="BLOCKE~1.CER|blocked.certs" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\security\blocked.certs" SelfReg="false"/>
+    <ROW File="cacerts" Component_="blocked.certs" FileName="cacerts" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\security\cacerts" SelfReg="false"/>
+    <ROW File="default.policy" Component_="blocked.certs" FileName="DEFAUL~1.POL|default.policy" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\security\default.policy" SelfReg="false"/>
+    <ROW File="public_suffix_list.dat" Component_="blocked.certs" FileName="PUBLIC~1.DAT|public_suffix_list.dat" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\security\public_suffix_list.dat" SelfReg="false"/>
+    <ROW File="tzdb.dat" Component_="classlist" FileName="tzdb.dat" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\tzdb.dat" SelfReg="false"/>
+    <ROW File="tzmappings" Component_="classlist" FileName="TZMAPP~1|tzmappings" Attributes="0" SourcePath="target\jdk-19+36-jre\lib\tzmappings" SelfReg="false"/>
+    <ROW File="release" Component_="DISCLAIMER" FileName="release" Attributes="0" SourcePath="target\jdk-19+36-jre\release" SelfReg="false"/>
+    <ROW File="NOTICE" Component_="DISCLAIMER" FileName="NOTICE" Attributes="0" SourcePath="target\jdk-19+36-jre\NOTICE" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="target" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" Options="8" UseLargeSchema="true" ExeName="javafx-19-advancedinstaller-example" MsiPackageType="x64" JRE64Dir="jre64_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiConditionComponent">
+    <ROW Feature_="bitJREBundle" Level="0" Condition="NOT VersionNT64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="MainFeature" Component_="javafxbase19win.jar"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreconsolel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoredatetimel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoredebugl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreerrorhandlingl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorefilel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorefilel120.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorefilel210.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorehandlel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreheapl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreinterlockedl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorelibraryloaderl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorelocalizationl120.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorememoryl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorenamedpipel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprocessenvironmentl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprocessthreadsl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprocessthreadsl111.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprofilel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorertlsupportl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorestringl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoresynchl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoresynchl120.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoresysinfol110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoretimezonel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreutill110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtconiol110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtconvertl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtenvironmentl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtfilesysteml110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtheapl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtlocalel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtmathl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtmultibytel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtprivatel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtprocessl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtruntimel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtstdiol110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtstringl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrttimel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtutilityl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="awt.dll"/>
+    <ROW Feature_="MainFeature" Component_="dt_socket.dll"/>
+    <ROW Feature_="MainFeature" Component_="extnet.dll"/>
+    <ROW Feature_="MainFeature" Component_="fontmanager.dll"/>
+    <ROW Feature_="MainFeature" Component_="freetype.dll"/>
+    <ROW Feature_="MainFeature" Component_="instrument.dll"/>
+    <ROW Feature_="MainFeature" Component_="j2gss.dll"/>
+    <ROW Feature_="MainFeature" Component_="j2pcsc.dll"/>
+    <ROW Feature_="MainFeature" Component_="j2pkcs11.dll"/>
+    <ROW Feature_="MainFeature" Component_="jaas.dll"/>
+    <ROW Feature_="MainFeature" Component_="jabswitch.exe"/>
+    <ROW Feature_="MainFeature" Component_="jaccessinspector.exe"/>
+    <ROW Feature_="MainFeature" Component_="jaccesswalker.exe"/>
+    <ROW Feature_="MainFeature" Component_="java.dll"/>
+    <ROW Feature_="MainFeature" Component_="java.exe"/>
+    <ROW Feature_="MainFeature" Component_="javaaccessbridge.dll"/>
+    <ROW Feature_="MainFeature" Component_="javajpeg.dll"/>
+    <ROW Feature_="MainFeature" Component_="javaw.exe"/>
+    <ROW Feature_="MainFeature" Component_="jawt.dll"/>
+    <ROW Feature_="MainFeature" Component_="jdwp.dll"/>
+    <ROW Feature_="MainFeature" Component_="jfr.exe"/>
+    <ROW Feature_="MainFeature" Component_="jimage.dll"/>
+    <ROW Feature_="MainFeature" Component_="jli.dll"/>
+    <ROW Feature_="MainFeature" Component_="jrunscript.exe"/>
+    <ROW Feature_="MainFeature" Component_="jsound.dll"/>
+    <ROW Feature_="MainFeature" Component_="jsvml.dll"/>
+    <ROW Feature_="MainFeature" Component_="jwebserver.exe"/>
+    <ROW Feature_="MainFeature" Component_="keytool.exe"/>
+    <ROW Feature_="MainFeature" Component_="kinit.exe"/>
+    <ROW Feature_="MainFeature" Component_="klist.exe"/>
+    <ROW Feature_="MainFeature" Component_="ktab.exe"/>
+    <ROW Feature_="MainFeature" Component_="lcms.dll"/>
+    <ROW Feature_="MainFeature" Component_="management.dll"/>
+    <ROW Feature_="MainFeature" Component_="management_agent.dll"/>
+    <ROW Feature_="MainFeature" Component_="management_ext.dll"/>
+    <ROW Feature_="MainFeature" Component_="mlib_image.dll"/>
+    <ROW Feature_="MainFeature" Component_="msvcp140.dll"/>
+    <ROW Feature_="MainFeature" Component_="net.dll"/>
+    <ROW Feature_="MainFeature" Component_="nio.dll"/>
+    <ROW Feature_="MainFeature" Component_="prefs.dll"/>
+    <ROW Feature_="MainFeature" Component_="rmi.dll"/>
+    <ROW Feature_="MainFeature" Component_="rmiregistry.exe"/>
+    <ROW Feature_="MainFeature" Component_="classes.jsa"/>
+    <ROW Feature_="MainFeature" Component_="jvm.dll"/>
+    <ROW Feature_="MainFeature" Component_="splashscreen.dll"/>
+    <ROW Feature_="MainFeature" Component_="sspi_bridge.dll"/>
+    <ROW Feature_="MainFeature" Component_="sunmscapi.dll"/>
+    <ROW Feature_="MainFeature" Component_="syslookup.dll"/>
+    <ROW Feature_="MainFeature" Component_="ucrtbase.dll"/>
+    <ROW Feature_="MainFeature" Component_="vcruntime140.dll"/>
+    <ROW Feature_="MainFeature" Component_="vcruntime140_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="verify.dll"/>
+    <ROW Feature_="MainFeature" Component_="w2k_lsa_auth.dll"/>
+    <ROW Feature_="MainFeature" Component_="windowsaccessbridge64.dll"/>
+    <ROW Feature_="MainFeature" Component_="zip.dll"/>
+    <ROW Feature_="MainFeature" Component_="logging.properties"/>
+    <ROW Feature_="MainFeature" Component_="jmxremote.access"/>
+    <ROW Feature_="MainFeature" Component_="java.policy"/>
+    <ROW Feature_="MainFeature" Component_="default_local.policy"/>
+    <ROW Feature_="MainFeature" Component_="README.txt"/>
+    <ROW Feature_="MainFeature" Component_="default_local.policy_1"/>
+    <ROW Feature_="MainFeature" Component_="DISCLAIMER"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_1"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_2"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_3"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_4"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_5"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_6"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_7"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_8"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_9"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_10"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_11"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_12"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_13"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_14"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_15"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_16"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_17"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_18"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_19"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_20"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_21"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_22"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_23"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_24"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_25"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_26"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_27"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_28"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_29"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_30"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_31"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_32"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_33"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_34"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_35"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_36"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_37"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_38"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_39"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_40"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_41"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_42"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_43"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_44"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_45"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_46"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_47"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_48"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_49"/>
+    <ROW Feature_="MainFeature" Component_="ADDITIONAL_LICENSE_INFO_50"/>
+    <ROW Feature_="MainFeature" Component_="classlist"/>
+    <ROW Feature_="MainFeature" Component_="javafxexample.exe"/>
+    <ROW Feature_="MainFeature" Component_="javafx19aip1.0SNAPSHOT.jar"/>
+    <ROW Feature_="MainFeature" Component_="default.jfc"/>
+    <ROW Feature_="MainFeature" Component_="blocked.certs"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="JAVAFX~2.INI|javafx-example.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="javafxexample.exe"/>
+    <ROW IniFile="ClassPath" FileName="JAVAFX~2.INI|javafx-example.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[#javafx19aip1.0SNAPSHOT.jar];[dependency_Dir]*.jar;" Action="0" Component_="javafxexample.exe"/>
+    <ROW IniFile="FailureCheck" FileName="JAVAFX~2.INI|javafx-example.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="javafxexample.exe"/>
+    <ROW IniFile="MainClass" FileName="JAVAFX~2.INI|javafx-example.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="net.ladstatt.aip.HelloApplication" Action="0" Component_="javafxexample.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="JAVAFX~2.INI|javafx-example.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="javafxexample.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="JAVAFX~2.INI|javafx-example.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="javafxexample.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="1398"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="javafx-example.exe" Launcher="javafxexample.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#javafxexample.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2022" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="0" Platform64="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
+    <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
+    <ROW Registry="LZMA" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA" Name="\"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductCode" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]" Name="\"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductVersion" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="javafxexample" Directory_="DesktopFolder" Name="JAVAFX~1|javafx-example" Component_="javafxexample.exe" Target="[#javafxexample.exe]" Description="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2022" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="dependency_Dir" SourcePath="target\dependency" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+    <ROW Directory_="jre64_Dir" SourcePath="target\jdk-19+36-jre" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6" FileAddOptions="4"/>
+  </COMPONENT>
+</DOCUMENT>
